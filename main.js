@@ -1,3 +1,8 @@
+  window.onload = function() {
+    if (!window.location.hash) {
+      window.location.href = window.location.pathname + "#register-ctn";
+    }
+  };
 let inputs = document.querySelectorAll("input");
 // console.log(inputs);
 
