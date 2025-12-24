@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- <h1>Create A User Account</h1> -->
+      <section id="login-ctn">
+        <form id="login">
+          <h2>Sign in</h2>
+          <div>
+            <label for="email" class="email">Email</label>
+            <input autocomplete="off" type="email" id="email" />
+          </div>
+          <div>
+            <label for="password" class="password">Password</label>
+            <input autocomplete="off" type="password" id="password" />
+          </div>
+          <button type="button">Login</button>
+          <fieldset class="other-option">
+            <legend>or</legend>
+          </fieldset>
+          <button type="button" class="google-btn">
+            <img src="" alt="" />Google
+          </button>
+          <p>Don't have an account yet? <a href="#register-ctn">Sign up</a></p>
+        </form>
+      </section>
+      <section targeted id="register-ctn">
+        <form id="register">
+          <h2>Sign up</h2>
+          <div>
+            <label class="register-email" for="register-email">Email</label>
+            <input autocomplete="off" type="email" id="register-email" />
+          </div>
+          <div>
+            <label class="register-password" for="register-password"
+              >Password</label
+            >
+            <input autocomplete="off" type="password" id="register-password" />
+          </div>
+          <div>
+            <label class="confirm-password" for="confirm-password"
+              >Confirm password</label
+            >
+            <input autocomplete="off" type="password" id="confirm-password" />
+          </div>
+          <button type="button">Create</button>
+          <fieldset class="other-option">
+            <legend>or</legend>
+          </fieldset>
+          <button type="button" class="google-btn">
+            <img src="" alt="" />Google
+          </button>
+          <p>Already have an account? <a href="#login-ctn">Sign in</a></p>
+        </form>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
