@@ -55,7 +55,6 @@ section form {
   justify-content: center;
   align-items: center;
   width: 80%;
-  /* border: 1px solid #000; */
 }
 
 form h2 {
@@ -66,27 +65,36 @@ form div:not(.other-option) {
   width: 100%;
   text-align: left;
   position: relative;
-  /* border: 1px solid #fff; */
+  border-bottom: 1px solid #fff;
+  border-radius: 0;
   margin-bottom: 2rem;
 }
 
 form label {
   align-self: self-start;
-  /* top: 1.6rem; */
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
   position: absolute;
-  transform: translateY(.6rem);
+  /* border: 1px solid #000; */
+  transform: translateY(.5rem);
   transition: all .3s ease-in-out;
 }
 
+form i {
+  position: absolute;
+  transform: translateY(.5rem);
+  right: 0rem;
+  font-size: 1.2rem;
+}
 form input,
 button {
-  width: 100%;
+  width: 95%;
   color: #fff;
   padding: 0.5rem 0;
   background: transparent;
   border: none;
   outline: none;
-  border-block-end: 1px solid;
 }
 
 :has(#login #email:focus) .email,
@@ -107,7 +115,17 @@ button {
   margin-bottom: 1rem;
   border: 1px solid #fff;
 }
+.google-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  }
 
+.google-btn svg{
+  width: 20px;
+  height: 20px;
+}
 .other-option {
   width: 90%;
   position: relative;
